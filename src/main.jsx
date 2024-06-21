@@ -53,17 +53,17 @@ const router = createBrowserRouter([
       {
         path:'/updateCraft/:id',
         element:<Update></Update>,
-        loader:({params})=> fetch(`https://jute-wooden-server.vercel.app/craft/update/${params.id}`)
+        loader:({params})=> fetch(`https://jute-wooden-server-kappa.vercel.app/craft/update/${params.id}`)
       },
       {
         path:'/details/:id',
         element:<PrivateRoute><Details></Details></PrivateRoute>,
-        loader:({params})=> fetch(`https://jute-wooden-server.vercel.app/craft/idx/${params.id}`)
+        loader:({params})=> fetch(`https://jute-wooden-server-kappa.vercel.app/craft/idx/${params.id}`)
       },
       {
         path:'/sameCategory/:subcategory_Name',
         element:<SameCategories></SameCategories>,
-        loader:({params})=> fetch(`https://jute-wooden-server.vercel.app/craft/sub/cat/${params.subcategory_Name}`)
+        loader:({params})=> fetch(`https://jute-wooden-server-kappa.vercel.app/craft/sub/cat/${params.subcategory_Name}`)
       }
     ]
   }

@@ -1,6 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-// import AllArtAndCraftCard from "../AllArtAndCraft/AllArtAndCraftCard";
-import CraftItemSectionCard from "../CraftItemsSection/CraftItemSectionCard";
+import CraftItemSectionCard from "../CraftItemSection/CraftItemSectionCard";
 
 const SameCategories = () => {
     const crafts = useLoaderData();

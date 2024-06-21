@@ -12,7 +12,7 @@ const Update = () => {
 
         // send data to the server
 
-        fetch(`https://jute-wooden-server.vercel.app/craft/update/${_id}`, {
+        fetch(`https://jute-wooden-server-kappa.vercel.app/craft/update/${_id}`, {
             method: 'PUT',
             headers:{
                 'content-type': 'application/json'

@@ -6,7 +6,7 @@ const Category = () => {
     const [mainCategories, setMainCategories] = useState([]);
 
     useEffect(()=>{
-        fetch('https://jute-wooden-server.vercel.app/category')
+        fetch('https://jute-wooden-server-kappa.vercel.app/category')
         .then(res => res.json())
         .then(data => {
             setMainCategories(data);

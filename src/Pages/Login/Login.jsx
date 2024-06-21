@@ -5,9 +5,9 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { FcGoogle } from "react-icons/fc";
 import { GrGithub } from "react-icons/gr";
-import app from "../../firebase/firebse.init";
 import { getAuth, signInWithPopup } from "firebase/auth";
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import app from "../../firebase/firebase.init";
 
 
 const Login = () => {

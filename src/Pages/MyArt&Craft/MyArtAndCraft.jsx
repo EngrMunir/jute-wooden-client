@@ -10,7 +10,7 @@ const MyArtAndCraft = () => {
     const [loading, setLoading] =useState(true);
 
     useEffect(()=>{
-        fetch(`https://jute-wooden-server.vercel.app/craft/${user?.email}`)
+        fetch(`https://jute-wooden-server-kappa.vercel.app/craft/${user?.email}`)
         .then(res => res.json())
         .then(data=> {
           setMyLists(data)
@@ -30,7 +30,7 @@ const MyArtAndCraft = () => {
           confirmButtonText: "Yes, delete it!"
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`https://jute-wooden-server.vercel.app/craft/${_id}`,{
+            fetch(`https://jute-wooden-server-kappa.vercel.app/craft/${_id}`,{
               method: 'DELETE'
             })
             .then(res => res.json())

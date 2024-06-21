@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import CraftItemSectionCard from "./CraftItemSectionCard";
 
-const CraftItemsSection = () => {
+const CraftItemSection = () => {
     const [allItem, setAllItem] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
-        fetch('https://jute-wooden-server.vercel.app/craft')
+        fetch('https://jute-wooden-server-kappa.vercel.app/craft')
         .then(res => res.json())
         .then(data => {
             setAllItem(data)
@@ -33,4 +33,4 @@ const CraftItemsSection = () => {
     );
 };
 
-export default CraftItemsSection;
+export default CraftItemSection;
