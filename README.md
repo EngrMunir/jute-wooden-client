@@ -11,7 +11,7 @@ The website stands out for its vast collection of jute wooden craft. This projec
 ### 1. Clone the Repository
 Clone the project repository to your local machine using the following command:
 ```sh
-git clone 
+git clone https://github.com/EngrMunir/jute-wooden-client.git
 ### 2. Move to the project repository
 cd jute-wooden-client
 ### 3. Install the required project dependencies using npm:
